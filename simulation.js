@@ -38,7 +38,7 @@ var areaBase=8000;
 
 // RGB Colors
 var black='#000000';
-var darkred='#960303';
+var darkred='#591601';
 var darkdarkgrey='#101010';
 var darkgrey='#202020';
 var grey='#808080';
@@ -274,8 +274,9 @@ function drawParticle(particle) {
         if (particle[4]==1) fc=white;
         else if (particle[4]==2) fc=lightgrey;
         else {
-            let h=(-particle[3]*4.8)+30;
-            fc="hsl("+h+",100%,50%)";
+            let h=(-particle[3]*4.4)+10;
+            let l=(particle[3]*1.1)+20;
+            fc=`hsl(${h},100%,${l}%)`;
         }
     }
     // Draw particle:
