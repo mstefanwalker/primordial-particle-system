@@ -7,7 +7,7 @@ var a=180; a=(a/180)*Math.PI; // Alpha in degrees converted to radians
 var b=17; b=(b/180)*Math.PI; // Beta in degrees converted to radians
 var v=0.67; // Speed of particles
 var r=10; // Radius of neighbourhood. the paper puts this at 5, but I seem to be getting the paper's results with 10.
-var density=0.028; // in particles per square simulation units
+var density=0.0242; // in particles per square simulation units
 
 // Model
 var p; // Particles
