@@ -38,6 +38,7 @@ var areaBase=8000;
 
 // RGB Colors
 var black='#000000';
+var darkred='#960303';
 var darkdarkgrey='#101010';
 var darkgrey='#202020'
 var grey='#808080';
@@ -246,7 +247,7 @@ function placeInFrame(frame, i) {
 
 function draw() {
     context.clearRect(0,0,displayWidth,displayHeight); // Clear canvas
-    context.fillStyle=darkgrey;
+    context.fillStyle=darkred;
     context.fillRect(0,0,displayWidth,displayHeight);
     for (i=0; i<n; i++) { // For each particle:
         drawParticle(p[i]);
@@ -273,8 +274,8 @@ function drawParticle(particle) {
         if (particle[4]==1) fc=white;
         else if (particle[4]==2) fc=lightgrey;
         else {
-            let h=(particle[3]*6.8)+90;
-            fc="hsl("+h+",90%,45%)";
+            let h=(-particle[3]*4.8)+30;
+            fc="hsl("+h+",100%,50%)";
         }
     }
     // Draw particle:
