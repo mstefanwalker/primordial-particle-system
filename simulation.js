@@ -22,7 +22,7 @@ var modelArea;
 // Display Parameters
 var skipFrame=true;
 var colorRender=1;
-var pscale=1; // Size/scale of particles. 1 gives a good idea of the underlying model since you can see the size of one simulation unit by looking at the size of the dot.
+var pscale=2.5; // Size/scale of particles. 1 gives a good idea of the underlying model since you can see the size of one simulation unit by looking at the size of the dot.
 var t=40; // Time interval in milliseconds
 
 // Display
